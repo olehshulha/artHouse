@@ -2,14 +2,14 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <metadata>
-Created by FontForge 20161003 at Fri Feb 15 07:47:12 2019
- By www-data
+Created by FontForge 20170731 at Tue Nov  8 23:07:44 2011
+ By Aleksey,,,
 Copyright (c) 2010-2011 by tyPoland Lukasz Dziedzic with Reserved Font Name "Lato". Licensed under the SIL Open Font License, Version 1.1.
 </metadata>
 <defs>
-<font id="LatoBold" horiz-adv-x="1160" >
+<font id="Lato-Bold" horiz-adv-x="1160" >
   <font-face 
-    font-family="LatoBold"
+    font-family="Lato"
     font-weight="700"
     font-stretch="normal"
     units-per-em="2000"

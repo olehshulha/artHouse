@@ -1,12 +1,21 @@
-<div>
-	<h1>Lorem!</h1>
-  user-index works!
-  <a routerLink="/login">Login</a>
-  <a routerLink="/events">events</a>
-  <a routerLink="/school">School</a>
-  <a routerLink="/online-course">Online Course</a>
-  
-  <a routerLink="/contacts">Contacts</a>
-  
-
-</div>
+<section class="main">
+  <div class="row">
+    <div class="col fixed">
+      <div class="container">
+        <app-header></app-header>
+        <div class="main__text">
+          <p>открываем двери в творчество</p>
+          <div class="main__text--btn">
+            <a href="">Онлайн обучение</a>
+            <a href="">Курсы в школе</a>
+          </div>
+        </div>
+        <app-footer></app-footer>
+      </div>
+    </div>
+    <div class="col scroll">
+      <img class="col__bg" src="/assets/images/main/illustration.png" alt="">
+      <img class="col__logo" src="/assets/images/main/logo.png" alt="">
+    </div> 
+  </div>
+</section>

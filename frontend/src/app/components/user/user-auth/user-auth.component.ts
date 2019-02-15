@@ -3,8 +3,8 @@ import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-user-login',
-  templateUrl: './user-login.component.html',
-  styleUrls: ['./user-login.component.sass']
+  templateUrl: './user-auth.component.html',
+  styleUrls: ['./user-auth.component.sass']
 })
 export class UserLoginComponent implements OnInit {
 

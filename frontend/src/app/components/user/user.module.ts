@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { UserLoginComponent } from './user-login/user-login.component';
-import { UserRegisterComponent } from './user-register/user-register.component';
+import { UserLoginComponent } from './user-auth/user-auth.component';
 import { UserEventsComponent } from './user-events/user-events.component';
 import { UserEventsSingleComponent } from './user-events-single/user-events-single.component';
 import { UserIndexComponent } from './user-index/user-index.component';
@@ -12,16 +11,13 @@ import { SchoolPageSingleComponent } from './school-page-single/school-page-sing
 import { OnlineCoursePageComponent } from './online-course-page/online-course-page.component';
 import { OnlineCourseSingleComponent } from './online-course-single/online-course-single.component';
 import { TeamPageComponent } from './team-page/team-page.component';
-
-
-
+import { SharedModule } from '../shared/shared.module';
 
 
 const userRoutes: Routes = [
 	{ path: '', component: UserIndexComponent },
   { path: 'login', component: UserLoginComponent },
   { path: 'contacts', component: ContactsPageComponent },
-  { path: 'register', component: UserRegisterComponent },
   { path: 'events', component: UserEventsComponent },
   { path: 'events/:alias', component: UserEventsSingleComponent },
   { path: 'school', component: SchoolPageComponent },
@@ -38,13 +34,13 @@ const userRoutes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule.forChild(
       userRoutes
     ),
   ],
   declarations: [
   	UserLoginComponent, 
-  	UserRegisterComponent, 
   	UserEventsComponent, 
   	UserEventsSingleComponent, 
     UserIndexComponent,

@@ -1,0 +1,46 @@
+.col
+    height: 100vh
+    &__logo
+        position: absolute
+        left: 0
+        top: 0
+        bottom: 0
+        right: 0
+        margin: auto
+    &.scroll
+        position: relative
+    &__bg
+        position: absolute
+        left: 0
+        top: 0
+.main
+    &__text
+        flex: 2 !important
+        p
+            font-size: 42px
+            width: 30%
+            color: #000
+            font-family: 'FuturaPT Bold'
+            line-height: 1.2
+        &--btn
+            display: flex
+            a
+                padding: 25px 50px
+                margin-right: 40px
+                font-size: 18px
+                font-family: 'FuturaPT Bold'
+                text-transform: uppercase
+                text-decoration: none
+                border: 2px solid #8c467c
+                border-radius: 50px
+                color: #8c467c
+                letter-spacing: 1px
+                &:first-child
+                    color: #fff
+                    background: #8c467c
+
+    .container
+        display: flex
+        flex-direction: column
+        >*
+            flex: 1
