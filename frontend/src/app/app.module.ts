@@ -5,6 +5,7 @@ import { NotfoundComponent } from './components/user/notfound/notfound.component
 import { AppComponent } from './app.component';
 import { SharedModule } from './components/shared/shared.module';
 import {TransferHttpCacheModule} from '@nguniversal/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
       { path: '**', redirectTo: '/404' }
     ]),
     SharedModule,
-    TransferHttpCacheModule
+    TransferHttpCacheModule,
+    BrowserAnimationsModule
    ],
   providers: [],
   bootstrap: [AppComponent]
