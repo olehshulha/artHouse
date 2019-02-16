@@ -1,0 +1,37 @@
+.col
+    height: 100vh
+    &.scroll
+        position: relative
+        align-content: center
+        display: flex
+.school
+    &__text
+        flex: 2 !important
+        justify-content: center
+        flex-direction: column
+        display: flex
+        *
+            color: #000
+            line-height: 1.2
+            text-transform: uppercase
+            margin: 0
+        h2
+            font-size: 48px
+            font-family: 'Lato Black'
+            margin-bottom: 15px
+        p
+            font-family: 'FuturaPT Medium'
+            font-size: 30px
+            width: 60%
+    .scroll
+        padding: 0
+@media (max-width: 1650px)
+    .main
+        &__text
+            p
+                font-size: 42px
+                
+            &--btn
+                a
+                    font-size: 16px
+                    padding: 25px 35px

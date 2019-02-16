@@ -1,9 +1,17 @@
-<div>
-	<h1>School Page</h1>
-    School Page works!
-    <a routerLink="/school/school-title-1">school-title-1</a>
-    <a routerLink="/school/school-title-2">school-title-2</a>
-    <a routerLink="/school/school-title-3">school-title-3</a>
-    <a routerLink="/school/school-title-4">school-title-4</a>
-    <a routerLink="/school/school-title-5">school-title-5</a>
-</div>
+<section class="school">
+    <div class="row">
+        <div class="col fixed one-page">
+        <div class="container">
+            <app-header [className]="'black'"></app-header>
+            <div class="school__text">
+                <h2>Курсы в школе</h2>
+                <p>образовательный проект и пространство для развития</p>
+            </div>
+            <app-footer class="app-footer"></app-footer>
+        </div>
+        </div>
+        <div class="col scroll one-page">
+        
+        </div> 
+    </div>
+</section>

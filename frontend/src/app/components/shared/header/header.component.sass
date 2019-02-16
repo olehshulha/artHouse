@@ -13,6 +13,12 @@
                     font-family: 'FuturaPT Medium'
                 img
                     display: none
+                    width: 245px
+                    object-fit: contain
+                    margin-bottom: 15px
+                    cursor: pointer
+                    outline: none
+                    user-select: none
             &:last-child
                 text-align: right
                 a
@@ -33,12 +39,13 @@
             color: #fff !important
             border-color: #fff !important
         .col
-            img
+            img.logo-white
                 display: flex !important
-                width: 245px
-                object-fit: contain
-                margin-bottom: 15px
-                cursor: pointer
-                outline: none
-                user-select: none
+    &.black
+        a
+            color: #000 !important
+            border-color: #000 !important
+        .col
+            img.logo-black
+                display: flex !important
             
