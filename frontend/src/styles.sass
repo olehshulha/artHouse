@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~font-awesome/css/font-awesome.css'
 @import "~@angular/material/prebuilt-themes/indigo-pink.css"
+@import 'leaflet/dist/leaflet.css'
 
 
 @font-face 
@@ -41,20 +42,32 @@
 body
     overflow: hidden
     margin: 0
+.col
+    box-sizing: border-box
+    flex: 1
 .row
     display: flex
     justify-content: center
     flex-direction: row
-    >.col
-        box-sizing: border-box
-        flex: 1
-    .fixed.col
+    .fixed.col, .scroll
         display: flex
         justify-content: flex-end
         overflow: hidden
         padding: 75px 100px 75px 0
+    .scroll
+        justify-content: flex-start
+        padding: 75px 0px 75px 100px
+.one-page
+    max-height: 1080px
+    box-sizing: border-box
 .container
     width: 650px
+    display: flex
+    flex-direction: column
+    position: relative
+    z-index: 1
+    >*
+        flex: 1
 .app-footer
     display: flex
     width: 100%

@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class UserIndexComponent implements OnInit {
 
   constructor( private title: Title ) {
-  	this.title.setTitle( 'Home title' );
+  	this.title.setTitle( 'ArtHouse' );
   }
 
   ngOnInit() {

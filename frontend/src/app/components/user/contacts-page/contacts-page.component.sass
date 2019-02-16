@@ -1,0 +1,40 @@
+.contacts
+    >.row
+        height: 100vh
+        .col
+            a, p
+                font-family: 'Lato'
+                font-size: 22px
+                color: #fff
+                text-decoration: none
+                line-height: 1.2
+                span
+                    font-size: 14px
+                    display: inline-flex
+            &.fixed
+                background-color: #8c467c
+            &.scroll
+                padding: 0
+    .app-header
+        a
+            color: #fff
+    &__text
+        display: flex
+        align-items: flex-start
+        &--mail, &--phone, &--geo, &--card
+            padding-left: 60px
+            position: relative
+            margin-bottom: 25px
+            img
+                position: absolute
+                left: 0
+                top: 5px
+        &--work
+            width: 60%
+            text-transform: uppercase
+            margin-top: 0
+        &--phone
+            display: flex
+            flex-direction: column
+               
+

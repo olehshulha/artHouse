@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { UserLoginComponent } from './user-auth/user-auth.component';
 import { UserEventsComponent } from './user-events/user-events.component';
 import { UserEventsSingleComponent } from './user-events-single/user-events-single.component';
@@ -38,6 +39,7 @@ const userRoutes: Routes = [
     RouterModule.forChild(
       userRoutes
     ),
+    LeafletModule
   ],
   declarations: [
   	UserLoginComponent, 
