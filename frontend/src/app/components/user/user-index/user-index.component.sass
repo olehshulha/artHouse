@@ -7,6 +7,7 @@
         bottom: 0
         right: 0
         margin: auto
+        width: 70%
     &.scroll
         position: relative
     &__bg
@@ -44,3 +45,13 @@
         flex-direction: column
         >*
             flex: 1
+@media (max-width: 1650px)
+    .main
+        &__text
+            p
+                font-size: 42px
+                
+            &--btn
+                a
+                    font-size: 16px
+                    padding: 25px 35px
